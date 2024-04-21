@@ -1,0 +1,136 @@
+ /* @import "/index.html/src/css/work.css"; для підключення інших файлів з css  */
+
+*{
+    box-sizing: border-box;/* для того аби весь блок був не більше width height */
+    /* * селектор всіх елементів */
+}
+
+
+body{
+    background-color:darkslategrey;
+}
+
+#first{
+    color:black;
+}/* для Id */
+
+
+main{
+    background-color: darkgrey;
+}
+
+p{
+    color: crimson;
+    font-size: 50px;/* для задання розміру тексту */
+}
+
+h1{
+    text-align: center;/*  для того аби поставити текст по середині */
+    font-weight:bolder;/* жирність шрифту */
+    font-style: italic;/* Для зміни стиля текста */
+    text-decoration: underline;/* Для декорації тексту */
+    text-decoration: line-through;
+    font-size: 69px;/* для величини тексту */
+    text-transform: uppercase;/* Для зміни регістра букв */
+
+
+
+}
+
+.box{
+    display: inline-block;
+    vertical-align: middle;
+    /* для вирівнювання по вертикалі */
+    /* position: relative; */
+    width: 300px;
+    height: 300px;
+    background-color:rgb(200, 100,0);
+    padding: 20px;/* Для внутрішнього відступу */
+    padding: 20px 30px 40px 60px;
+    /* padding: 1em 3px 30px 5px; top:    1em padding  */
+    /* right:  3px padding  */
+    /* bottom: 30px padding */
+    /* left:   5px padding  */
+
+
+    border: 10px black solid;/* для формування кордону */
+    /* border-width: 10px;
+    border-color: black;
+    border-style: solid; */
+    /* розмір контенту незмінюється з розміром border */
+
+    margin: 20px;/* для відступу від зовнішніх блоків */
+
+
+
+    z-index: 5;
+    /* для того щоб визначити що буде ближче до користувача */
+}
+
+
+
+.first{
+    /* display: inline; для перетворення одного типу в інший */
+    /* display: inline-block; для перетворення в блочно-строчні  */
+    width: 300px;
+    height: 300px;
+    background-color:aquamarine;
+    border-width: 80px;
+    border-color:black;
+    border-style:solid;
+    margin: 30px;
+}
+
+.second{
+    background-color:black;
+}
+
+.third{
+    background-color: brown;
+}
+
+/*   <div class="first second third"></div>
+<div class="first second third"></div>
+<div class="first second third"></div> *//* більша пріорететність в third */
+
+
+/* блоки поділяються на 
+блочні div -це каркас сайту і вони займають все пространство яке можуть забрать
+строчні a - вона займає скільки місця скільки в ній контента і margin може посунути тільки в право або в ліво і на неї не діє висота та ширина
+блочно-строчні вони не такі жадні як блочні і мають висоту ширину і і відступи зверху і знизу на відміну від строчних
+*/
+
+
+img{
+    display: block;
+    margin: 0 auto;/* для того аби поставити по середині по горизонталі */
+    width: 500px;
+
+}
+
+nav{
+    /* position: static;за замовченю */
+    /* position: relative; */
+    /* має чоти ствойства і ми можемо рухати як нам заманеться на відміну від margin коли ми рухаємо всі блоки */
+    /* left: 20px;
+    top: 200px;
+    margin: 20px;
+    margin-top: 20px;
+    margin-left: 20px; */
+    /* position: absolute; */
+    /* блок випадає із структури HTML і ми можемо його поставиди де потрібно */
+    /* left: 20px;
+    top: 200px; */
+    /* position: fixed; */
+    /* для того аби при скролі вони рухалося разом з тобою */
+    /* position: inherit; */
+    /* для того аби наслідувало position від батьків*/
+}
+
+.example{
+    position: relative;
+    /*для того аби nav міг орієнтуватися в  position: absolute на example а не на body */
+    height: 300px;
+    width: 300px;
+    background-color:blue;
+}
