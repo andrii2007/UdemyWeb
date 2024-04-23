@@ -1,0 +1,44 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1140px;
+    /* це значення від колон в Figma  */
+
+    margin: 0 auto; 
+}
+
+
+.Promo{
+    height: 800px;
+    background: url("/FirstPractic/Img/main_bg.svg") center center/cover;
+    /* cover для розтягування картинки під розміри блока */
+    padding: 38px 0 61px 0;
+  
+}
+
+
+.LogoImg{
+    display: block;
+    margin: 0 auto;
+
+}
+
+.Logo_text{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-top: 14px;
+
+}
+
