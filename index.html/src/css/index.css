@@ -116,6 +116,7 @@ img{
 }
 
 nav{
+    position: static;
     /* position: static;за замовченю */
     /* position: relative; */
     /* має чоти ствойства і ми можемо рухати як нам заманеться на відміну від margin коли ми рухаємо всі блоки */
@@ -143,3 +144,43 @@ nav{
 }
 
 
+.All_Block{
+    background-color:bisque;
+    height: 500px;
+    display: flex;
+ /* для того аби поставити на вирівняти всі блоки в один рівень */
+    flex-direction: column;
+    /* для того аби головна вісь була вертикальна */
+    flex-wrap: wrap;
+    /* для того щоб якщо багато елементів вони перемістилисся на наступну стрічну */
+    justify-content: center;
+    /* для того аби поставити блоки по середині(по горизонталі) */
+    justify-content: space-between;
+    /* для того аби зроби один від одного однакові відступи (по горизонталі) */
+    align-items: center;
+    /* для того аби поставити блоки по середині(по вертикалі) */
+
+}
+
+
+/* .first{
+    order: 3;
+}
+
+.second{
+    order: 1;
+}
+
+.third{
+    order: 2;
+} */
+
+/* для зміни порядку елементів */
+
+
+
+.nest{
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
