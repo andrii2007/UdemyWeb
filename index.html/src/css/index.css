@@ -1,4 +1,4 @@
- /* @import "/index.html/src/css/work.css"; для підключення інших файлів з css  */
+/* @import "/index.html/src/css/work.css"; для підключення інших файлів з css  */
 
 *{
     box-sizing: border-box;/* для того аби весь блок був не більше width height */
@@ -184,3 +184,4 @@ nav{
     font-weight: 400;
     font-style: normal;
 }
+

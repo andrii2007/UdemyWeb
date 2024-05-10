@@ -1,0 +1,40 @@
+$text_color: red
+// для створення переміної
+
+@mixin box 
+	display: block
+	width: 250px
+	height: 200px
+	background-color: red
+
+= box1
+	display: block
+	width: 250px
+	height: 200px
+	background-color: blue
+// альтернативний запис
+
+h1
+	color: $text_color
+	text-decoration: underline
+	+box1
+h2
+	color: blue
+
+.block
+	position: relative
+	background-color: black
+	
+	h3
+		color: green
+	&_color
+		/* & замінює block */
+		position: absolute
+		height: 100px
+		width: 300px
+		color: pink
+	.block_color
+		background-color: $text_color
+		button
+			@include box
+
