@@ -25,7 +25,7 @@
 
 .Promo{
     height: 800px;
-    background: url("/FirstPractic/Img/main_bg.svg") center center/cover;
+    background: url("../Img/main_bg.svg") center center/cover;
     /* cover для розтягування картинки під розміри блока */
     padding: 38px 0 61px 0;
   
