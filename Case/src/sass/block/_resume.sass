@@ -1,0 +1,84 @@
+.resume 
+    padding-top: 120px  
+    &_title
+        position: relative
+        text-align: center 
+        @include before_circle
+        &:before
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &_subtitle
+        text-align: center
+    &_wrapper
+        padding: 60px 65px 0 65px 
+        display: grid
+        grid-template-columns: repeat(2,425px)
+        column-gap: 136px
+    &_colums
+        &-title
+            &:before
+                content: ""
+                position: absolute
+                height: 15px
+                width: 15px
+                background-color: $main-color
+                border-radius: 100%
+                left: -7px
+                top: 50%
+                transform: translateY(-50%)
+        &-title
+            position: relative
+            padding-left: 35px
+        ul
+            list-style-type: none
+            li
+                position: relative
+                &::after
+                    content: ""
+                    width: 1px
+                    height: calc( 100% + 16px )
+                    position: absolute
+                    top: 22px
+                    left: 0
+                    background-color: #000
+    &_item
+        position: relative
+        &::before
+            content: ""
+            top: 68px
+            width: 45px
+            height: 1px
+            position: absolute
+            background-color: #000
+            z-index: 3
+
+        &-head
+            position: relative
+            padding: 45px 0 0 100px
+            .title
+                margin: 0
+        &-body
+            padding-left: 43px 
+            margin-top: 12px
+            font-size: 12px
+            line-height: 18px
+        &-icon
+            position: absolute
+            top: 50px
+            left: 45px
+            @include before_circle
+            img
+                position: absolute
+                left: 17px
+                top: 14px
+        &-location
+            font-size: 12px
+            line-height:18px
+            margin-top: 5px
+        
+
+
+
+
+

@@ -1,0 +1,173 @@
+@media(max-width:1440px)
+    .side_panel
+        display: none
+    
+    
+@media(max-width: 1200px)
+    .container
+        max-width: 960px
+    .aboutMe
+        &_wrapper
+            grid-template-columns: 400px 520px
+            column-gap: 40px
+        &_skils
+            column-gap: 20px 
+            grid-template-columns: repeat(2,250px) 
+        &_oportunity
+            column-gap: 15px
+            grid-template-columns: 40px 195px
+    .resume
+        &_wrapper
+            padding: 60px 76px 0 6px
+            display: grid
+            column-gap: 90px
+    .portfolio
+        &_wrapper
+            grid-template-columns: repeat(auto-fit,280px)
+            grid-auto-rows: 280px
+            justify-content: space-around
+        &_mac
+            grid-column: unset
+            grid-row: unset
+        &_plans
+            grid-column: unset
+            grid-row: unset
+            
+
+    // .skils
+    //     &_program
+    //         justify-content: center
+    //         margin: 60px auto
+    //         grid-template: repeat(2,270px)/repeat(2,270px)
+    //         gap: 75px
+
+
+
+@media(max-width: 992px)
+    .container
+        max-width: 720px
+    .title
+        &__fs36
+            font-size: 30px
+    .aboutMe
+        &_wrapper
+            grid-template-columns: 300px 380px
+        &_skils
+            margin-top: 20px
+            grid-template-columns:380px
+            grid-auto-columns: minmax(115px,auto)
+            gap: 0px 50px
+        &_oportunity
+            grid-template-columns: 40px 320px
+    .resume
+        &_wrapper
+            grid-template-columns: auto auto
+            grid-template-rows: auto auto
+            column-gap: 52px
+    .price
+        &_wrapper
+            grid-template-columns: repeat(auto-fit, 320px )
+            padding: 40px 0 0 0 
+
+
+
+@media(max-width: 768px)
+    .container
+        max-width: 540px
+    .title
+        &__fs48
+            font-size: 28px
+    .promo
+        &__title
+            line-height: 39px
+            font-size: 36px
+            line-height: 36px
+    .aboutMe
+        padding-top: 40px
+        &_img
+            grid-row: 1
+        &_name
+            grid-row: 2
+            grid-column: 1
+        &_skils
+            grid-template-columns: 260px 260px
+            gap: 0 22px
+            grid-row: 3
+            grid-column: 1
+        &_wrapper
+            display: grid
+            grid-template: 400px auto auto / 100%
+        &_oportunity
+            grid-template-columns: 40px 200px
+            grid-template-rows: 21px 95px
+            column-gap: 20px
+    .resume
+        &_wrapper
+            grid-template-columns: auto 
+            grid-template-rows: auto auto
+            row-gap: 40px
+    .price
+        &_wrapper
+            margin-top: 20px
+            justify-content: center
+    .skils
+        &_program
+            justify-content: center
+    .skills
+        &_procent
+            justify-content: center
+
+@media(max-width: 576px)
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .title
+        &__fs48
+            font-size: 28px
+        &__fs36
+            font-size: 24px
+            line-height: 36px
+    .promo
+        background: url("../img/main.png") no-repeat 57%/cover
+        &_btns
+            margin-top: 32px
+        
+    .hamburger
+        right: 20px
+    .menu
+        &_block
+            width: 250px
+        &_list 
+            padding-left: 20px
+    .aboutMe
+        margin-top: 0px
+        &_wrapper
+            grid-template: 340px auto auto / 1fr
+            row-gap: 20px
+        &_skils
+            margin-top: 80px
+            grid-template-columns: 1fr
+    .price
+        &_wrapper
+            grid-template-columns: repeat(auto-fit, 300px)
+    // .skils
+    //     margin-top: 60px
+    //     &_program
+    //         justify-content: center
+    //         margin: 60px auto
+    //         grid-template: repeat(2,270px)/repeat(1,270px)
+            
+
+    
+
+
+        // display: none
+
+
+
+// @media(1200px < width < 1347px )
+//     .container
+//         padding-left: 75px
+    
+
+

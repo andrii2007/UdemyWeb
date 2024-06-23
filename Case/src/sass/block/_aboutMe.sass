@@ -1,0 +1,96 @@
+.aboutMe
+    // margin: 120px auto 0 auto
+    margin-top: 120px
+    &_wrapper
+        display: grid
+        grid-template-columns: 400px 670px
+        grid-template-rows: minmax(245px, auto) minmax(255px, auto)
+        grid-auto-rows: minmax(245px, auto)
+        column-gap: 70px
+        row-gap: 40px
+    &_img
+        grid-row: 1/3
+        grid-column: 1
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &_name
+        grid-row: 1/2
+        grid-column: 2/3
+    &_skils
+        grid-row: 2/3
+        grid-column: 2/3
+        display: grid
+        grid-template-columns: repeat(2,260px)
+        grid-template-rows: repeat(2,116px)
+        gap: 20px 50px 
+       
+    ._divider
+        width: 60px
+        height: 3px
+        background-color: $main-color
+        border-radius: 10%
+    .divider_nocenter
+        margin: 0
+    &_desc
+        margin-top: 20px
+        height: 123px
+        font-weight: 500
+        font-size: 14px
+        line-height: 21px
+        color: #000000
+    &_circle
+        position: relative
+        padding-left: 10px
+        z-index: 2
+        @include before_circle
+    &_mt
+        margin-top: 6px
+    &_oportunity
+        display: grid
+        grid-template-columns: 40px 200px
+        grid-template-rows: 21px 95px
+        column-gap: 20px
+    &_imgO
+        grid-row: 1/3
+    &_title
+        font-weight: 700
+        font-size: 14px
+        line-height: 21px
+        color: #000000
+    &_descO
+        margin-top: 6px
+        font-weight: 500
+        font-size: 12px
+        line-height: 18px
+        color: #000000
+    &_imgO
+        position: relative
+        img
+            display: block
+            margin-top: 15px
+            margin-left: 15px
+        &:before    
+            content: ""
+            position: absolute
+            width: 36px
+            height: 36px
+            background: $main-color
+            border-radius:100%
+            z-index: -1
+            left: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
